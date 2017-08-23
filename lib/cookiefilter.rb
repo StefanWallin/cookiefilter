@@ -1,0 +1,3 @@
+module Cookiefilter
+  # Your code goes here...
+end
