@@ -1,6 +1,16 @@
 # Cookiefilter
 Cookie Filter uses a developer defined safelist of allowed cookies and their
-values to filter cookies that do not live up to the standard.
+values to filter cookies that do not live up to the standard. I want to thank
+MittMedia DMU for allowing me to open source this piece of code. We are always
+looking for new developers ;).
+
+## Performance
+Measurment has shown that this filter adds less than 1ms per request.
+
+This library has been in production on sites with 5 million weekly pageviews
+for 2 years before being packaged as a gem and open sourced.
+
+*This gem package has not been tested in production.*
 
 ## Getting started
 Install the [cookiefilter](http://rubygems.org/StefanWallin/cookiefilter) gem;
@@ -61,3 +71,10 @@ Happy filtering!
 ## License
 The gem is available as open source under the terms of the
 [MIT License](http://opensource.org/licenses/MIT).
+
+## Contribute
+All contributions are welcome, issues and PR's.
+Make sure tests pass by running them like so:
+```ruby
+rake test
+```
