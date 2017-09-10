@@ -11,9 +11,9 @@ Gem::Specification.new do |s|
   s.email       = ['cookiefilter@stefan-wallin.se']
 
   s.summary     = 'Whitelist your users cookies for your domain.'
-  s.description = 'Cookie Scrubber uses a developer defined whitelist of \
-                  allowed cookies and their values to scrub cookies that do not\
-                  live up to the standard.'
+  s.description = 'Cookie Filter uses a developer defined whitelist of \
+                  allowed cookies and their values to filter cookies that do \
+                  not live up to the standard.'
   s.license     = 'MIT'
   s.homepage    = 'https://github.com/StefanWallin/cookiefilter'
 
