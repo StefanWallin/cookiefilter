@@ -149,7 +149,7 @@ class Cookiefilter
   end # end class methods
 
   def initialize(app)
-    Cookiefilter::Validator.validate_safelist
+    Cookiefilter::Validator.validate_safelist(Cookiefilter::Rules.safelist)
     @app = app
     @size = 0
   end

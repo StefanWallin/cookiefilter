@@ -1,10 +1,9 @@
 class Cookiefilter::Validator
   class << self
-    def validate_safelist
-      safelist = Cookiefilter::Rules.safelist
+    def validate_safelist(safelist)
       err = Cookiefilter::MalformedSafelistError
-
       Cookiefilter::Validator.validate_array(err, safelist)
+
       safelist.each_index do |index|
         obj = safelist[index]
         Cookiefilter::Validator.validate_hash(err, index, obj)
@@ -14,6 +13,7 @@ class Cookiefilter::Validator
         Cookiefilter::Validator.validate_value(err, index, obj)
         Cookiefilter::Validator.validate_sacred(err, index, obj)
       end
+      true
     end
 
     def validate_array(err, list)
