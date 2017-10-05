@@ -1,9 +1,20 @@
 # Cookiefilter
 Cookie Filter uses a developer defined safelist of allowed cookies and their
-values to filter cookies that do not live up to the standard. I want to thank
-MittMedia DMU for allowing me to open source this piece of code. We are always
-looking for new developers ;).
+values to filter cookies that are not allowed by the safelist configuration. 
+This gem filters both incoming cookies from the browser and what cookies can 
+be set from rails. I want to thank MittMedia DMU for allowing me to open source 
+this piece of code. We are always looking for new developers ;).
 
+## When would I use this?
+- If you want to be on top of what data is allowed to be passed to your server.
+- If you have third party code executing on your first party domain(ads) that set
+  arbitrary cookies.
+- If your amount and size of cookies can run out of control and exceed the http
+  header limit of 8186 bytes. (At which time certain cloud providers simply
+  interpret that request as an attack and serves back a white page)
+- If you're already running mod_security or similar web firewalls and need to
+  complement with cookie filtering.
+  
 ## Performance
 Measurment has shown that this filter adds less than 1ms per request.
 
@@ -40,7 +51,8 @@ Add a `cookiefilter.rb` file to `config/initializers/`:
 class Cookiefilter
   def self.safelist
     # This is an array of hashes. It serves as a living documentation of our
-    # allowed cookies and their format.
+    # allowed cookies and their format. Need help with regex? Visit this site:
+    # http://rubular.com/
 
     # Each hash in the array is per cookie with the following format:
     #   description: Human readable string of what/who this cookie pertains.
