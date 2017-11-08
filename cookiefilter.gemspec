@@ -11,16 +11,13 @@ Gem::Specification.new do |s|
   s.email       = ['cookiefilter@stefan-wallin.se']
 
   s.summary     = 'Whitelist your users cookies for your domain.'
-  s.description = 'Cookie Filter uses a developer defined whitelist of \
-                  allowed cookies and their values to filter cookies that do \
-                  not live up to the standard.'
+  s.description = 'Cookie Filter uses a developer defined safelist of allowed cookies and their values to filter cookies that do not live up to the standard.'
   s.license     = 'MIT'
-  s.homepage    = 'https://github.com/StefanWallin/cookiefilter-rails'
+  s.homepage    = 'https://github.com/StefanWallin/cookiefilter'
 
-  s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
+  s.files = Dir['lib/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
 
-  s.add_dependency 'rails', '~> 5.1.3'
+  s.add_dependency 'rails', '~> 5.1.0'
   s.add_development_dependency 'faker', '~> 1.8.4'
   s.add_development_dependency 'byebug', '~> 9.1.0'
-  s.add_development_dependency 'travis', '~> 1.8.8'
 end

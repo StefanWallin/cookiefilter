@@ -2,9 +2,9 @@
  [![Gem Version](https://badge.fury.io/rb/cookiefilter.svg)](https://badge.fury.io/rb/cookiefilter)
 # Cookiefilter
 Cookie Filter uses a developer defined safelist of allowed cookies and their
-values to filter cookies that are not allowed by the safelist configuration. 
-This gem filters both incoming cookies from the browser and what cookies can 
-be set from rails. I want to thank MittMedia DMU for allowing me to open source 
+values to filter cookies that are not allowed by the safelist configuration.
+This gem filters both incoming cookies from the browser and what cookies can
+be set from rails. I want to thank MittMedia DMU for allowing me to open source
 this piece of code. We are always looking for new developers ;).
 
 ## When would I use this?
@@ -16,7 +16,7 @@ this piece of code. We are always looking for new developers ;).
   interpret that request as an attack and serves back a white page)
 - If you're already running mod_security or similar web firewalls and need to
   complement with cookie filtering.
-  
+
 ## Performance
 Measurment has shown that this filter adds less than 1ms per request.
 
