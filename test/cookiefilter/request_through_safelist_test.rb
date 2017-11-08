@@ -1,4 +1,5 @@
 require 'test_helper'
+require 'faker'
 
 class Cookiefilter::Test < ActiveSupport::TestCase
   test 'persists cookies with allowed names' do
