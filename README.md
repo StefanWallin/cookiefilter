@@ -1,3 +1,4 @@
+ [![Build Status](https://travis-ci.org/StefanWallin/cookiefilter-rails.svg?branch=master)](https://travis-ci.org/StefanWallin/cookiefilter-rails)
 # Cookiefilter
 Cookie Filter uses a developer defined safelist of allowed cookies and their
 values to filter cookies that are not allowed by the safelist configuration. 
