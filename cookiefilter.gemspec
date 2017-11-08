@@ -22,4 +22,5 @@ Gem::Specification.new do |s|
   s.add_dependency 'rails', '~> 5.1.3'
   s.add_development_dependency 'faker', '~> 1.8.4'
   s.add_development_dependency 'byebug', '~> 9.1.0'
+  s.add_development_dependency 'travis', '~> 1.8.8'
 end
