@@ -15,11 +15,11 @@ Gem::Specification.new do |s|
                   allowed cookies and their values to filter cookies that do \
                   not live up to the standard.'
   s.license     = 'MIT'
-  s.homepage    = 'https://github.com/StefanWallin/cookiefilter'
+  s.homepage    = 'https://github.com/StefanWallin/cookiefilter-rails'
 
   s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
 
   s.add_dependency 'rails', '~> 5.1.3'
-  s.add_development_dependency 'faker'
-  s.add_development_dependency 'byebug'
+  s.add_development_dependency 'faker', '~> 1.8.4'
+  s.add_development_dependency 'byebug', '~> 9.1.0'
 end
