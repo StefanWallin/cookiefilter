@@ -81,9 +81,9 @@ class Cookiefilter
 
     def maintain_limits(sized_cookies, kept_large = [], limited = [])
       if Cookiefilter.cookie_size_too_large?(kept_large, sized_cookies)
-        #TODO FIX BUG WITH byebug
-        removed = sized_cookies.shift
-        if removed[:sacred]
+        removed = sized_cookies.shift if sized_cookies.count > 0
+        removed = kept_large.shift if removed.nil?
+        if removed[:sacred] && sized_cookies.count > 0
           kept_large.push(removed)
         else
           limited.push(removed)
