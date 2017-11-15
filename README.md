@@ -1,4 +1,4 @@
- [![Build Status](https://travis-ci.org/StefanWallin/cookiefilter-rails.svg?branch=master)](https://travis-ci.org/StefanWallin/cookiefilter-rails)
+ [![Build Status](https://travis-ci.org/StefanWallin/cookiefilter.svg?branch=master)](https://travis-ci.org/StefanWallin/cookiefilter)
  [![Gem Version](https://badge.fury.io/rb/cookiefilter.svg)](https://badge.fury.io/rb/cookiefilter)
 # Cookiefilter
 Cookie Filter uses a developer defined safelist of allowed cookies and their
