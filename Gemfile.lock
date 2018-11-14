@@ -50,7 +50,7 @@ GEM
       tzinfo (~> 1.1)
     arel (9.0.0)
     builder (3.2.3)
-    byebug (9.1.0)
+    byebug (10.0.2)
     concurrent-ruby (1.0.5)
     crass (1.0.4)
     erubi (1.7.1)
@@ -122,7 +122,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  byebug (~> 9.1.0)
+  byebug (~> 10.0.2)
   cookiefilter!
   faker (~> 1.8.4)
 
