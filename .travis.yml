@@ -1,12 +1,12 @@
 language: ruby
 cache: bundler
 rvm:
-  - 2.6.2
+- 2.6.2
 install:
-  - gem install bundler
-  - bundle install
+- gem install bundler
+- bundle install
 script:
-  - bundle exec rake test
+- bundle exec rake test
 deploy:
   provider: rubygems
   gem: cookiefilter
@@ -15,4 +15,4 @@ deploy:
     tags: true
     rvm: 2.6.2
   api_key:
-    secure: SIuokio3HoK87FlPBAiYeKBkyR5lrR8ck5O9g7dtoZNy1yagfcM/hf+ofN41+/yKgfkaMwFYbP1Nvp2d4prn7Qp0GR1PTKrqAJgQluqsdFNj4QHOXHyrkfwQjD4KM1cINxS5XgEre8LcEjwMyrNYMW49YZjvLaE4HdRd5B8cR/zIHmbWTvEC/TPE108mHuKuwmCvFBpthRgc2UVoOckpI7wBlwCkh0yWSv7SZLEVqYrJ8L9WDb9sO/wrHwnFEJb2HT1MUl3RsPi8ybtW6WeXDi09nYFiNPoROS4IDo+tP+PSau3rfurB17CQM1StH0aakeEFfQw6mjBsmE4IthbHVghscjTMAiTXbBt2PPLLZcIAdrMYwdJfWZMB1n6V6y63I/NyZ8CnUfgwrH17jUf3wrQyuHmGFaI+HL22tnsvvheOussZ2JWgLFBODHh0OA09ZDbCj+3LvgyuDXbyIVzLSQdTyPkELKWgSRkkDYHl9ca2RO1CJruZD+AE/xAkdaPX0UWeCB6t1jNpS0yiejOgRgUjS7w3i7DeHXfSf41A9slaRJ7sRf3OWNoLUWO8e41DAHGLDAbao/CFuTDKXpeTiH75r4cHRVCx1W2LAPQQDvm3pt04QXUonhSz7Am8X+qo5LAzSxdqr9Vyey8VVPT2WgUk7DWqqTPBHiEzlhOcn50=
+    secure: cYqzGgSVQ/CCn359o0Et0xnGIZH5sjYERXq8hrzZVl2NjcrdU5BDbIbyRqhSNE9uXyLyADLDBSEHhMk5ce+8eO81dkQ75a/i7MUGtg0d3YWvZt+VqXFi0LdRr661eGRdIh4uj1yF4NCp+gP+9fotafQ2wKLnDRomCfXG5BU+flWWd31mozw29E4OR0+s3ya7IihBVU10g316jLTUDhAKgagsklUrc/JkmXnt/6JRdsA9adux/dut+HYqMAbCz2UlPhVvPExRsY/Vxk800W7ucWAdGcnkUIPq9FpxGjiW/JZzRqJb/0L1OMipINaTUALoJDpOAw0KD5xOcrNJATuvDImEaLHrK6kv6OJ4xkLLBVJPwxR+QpfAZnkrLFQRwkbj4jDrC0oBI8SVwMHGmpUQclY1SmGSR3BISYoI3osRi3Ku5f+QBKJBwgyd/3uAOc74fT9c86LjHfntyseB6R+Ieo83K+ADpLkBlCXzxnZ76nMrwhmN7gH9kluy0CrsDPYipLhd7xrbtSsIE62Uxz/ai3vcF6mUfy2RhGKo8FWcvJtxLPLlTluVci7nF8TVZhb3J7S+cmDe1nADDhaWtZ2ty0Gg1wW/+T+i8yEOBTJ9jh8nTwPIuqI712vHMJ1ac8YJRsRXrWniFUbX4txqVg/RxpvTXsSqHBzd1TaRa/vsIvM=
